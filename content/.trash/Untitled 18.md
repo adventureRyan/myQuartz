@@ -1,1 +1,0 @@
-![](attachment__Untitled/file-20250721101832137.jpg)
