@@ -1,0 +1,71 @@
+{
+  "is_obsidian_vault": true,
+  "smart_blocks": {
+    "embed_blocks": true,
+    "min_chars": 200
+  },
+  "smart_sources": {
+    "single_file_data_path": ".smart-env/smart_sources.json",
+    "min_chars": 200,
+    "embed_model": {
+      "adapter": "transformers",
+      "transformers": {
+        "legacy_transformers": false,
+        "model_key": "TaylorAI/bge-micro-v2"
+      },
+      "TaylorAI/bge-micro-v2": {}
+    }
+  },
+  "file_exclusions": "Untitled",
+  "folder_exclusions": "smart-chats",
+  "smart_view_filter": {
+    "render_markdown": true,
+    "show_full_path": false,
+    "results_limit": "20"
+  },
+  "smart_notices": {
+    "muted": {}
+  },
+  "excluded_headings": "",
+  "smart_threads": {
+    "chat_model": {
+      "adapter": "ollama",
+      "openai": {
+        "model_key": "gpt-4o"
+      },
+      "ollama": {
+        "model_key": "deepseek-r1:7b",
+        "models": {
+          "qw:custom": {
+            "model_name": "qw:custom",
+            "id": "qw:custom",
+            "multimodal": false,
+            "max_input_tokens": 131072,
+            "can_use_tools": true
+          },
+          "deepseek-r1:7b": {
+            "model_name": "deepseek-r1:7b",
+            "id": "deepseek-r1:7b",
+            "multimodal": false,
+            "max_input_tokens": 131072,
+            "can_use_tools": true
+          },
+          "deepseek-r1:1.5b": {
+            "model_name": "deepseek-r1:1.5b",
+            "id": "deepseek-r1:1.5b",
+            "multimodal": false,
+            "max_input_tokens": 131072,
+            "can_use_tools": true
+          }
+        }
+      }
+    },
+    "embed_model": {
+      "model_key": "None"
+    },
+    "language": "zh",
+    "review_context": true,
+    "lookup_limit": "10",
+    "send_tool_output_in_user_message": true
+  }
+}
