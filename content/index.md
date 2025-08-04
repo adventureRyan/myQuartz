@@ -15,6 +15,8 @@ title: Welcome to MyHome
 - [ ] 写下第一篇笔记,关于整个项目的部署
 
 
+![[Pasted image 20250804175448.png]]
+
 
 ```python
     # 用于构建 BM25 检索器的索引
