@@ -13,3 +13,22 @@ title: Welcome to MyHome
 - [ ] 测试下 google 的新项目
 ## Personal
 - [ ] 写下第一篇笔记,关于整个项目的部署
+
+
+
+```python
+    # 用于构建 BM25 检索器的索引
+    def build(self, txt_list: List[str]):
+        self.data_list = txt_list
+        self.tokenized_corpus = []
+        for doc in tqdm(self.data_list, desc="bm25 build "):
+            # 对每个文档用 self.tokenize 方法进行分词，并将分词结果加入 tokenized_corpus。
+            self.tokenized_corpus.append(self.tokenize(doc))
+        # 初始化 BM25Okapi 实例
+        self.bm25 = BM25Okapi(self.tokenized_corpus)
+
+    def tokenize(self,  text: str) -> List[str]:
+        """ 使用jieba进行中文分词。
+        """
+        return list(jieba.cut_for_search(text))
+```
