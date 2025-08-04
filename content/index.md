@@ -1,5 +1,4 @@
 ---
-title: Welcome to Quartz
+title: Welcome to MyHome
 ---
-
-你好,芳芳
+This is a homepage.
